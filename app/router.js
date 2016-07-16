@@ -11,6 +11,8 @@ Router.map(function() {
       this.route('job');
       this.route('page-not-found',{path:'/*wildcard'});
   });
+  this.route('/students');
+  this.route('/students/:id');
   this.route('students');
 });
 
