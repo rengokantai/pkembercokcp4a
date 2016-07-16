@@ -1,2 +1,6 @@
 {{#link-to 'about'}}abouttest{{/link-to}}
+
+{{#each model as |student|}}
+{{#link-to 'students' student.id}}{{student.name}}{{/link-to}}
+{{/each}}
 {{outlet}}
