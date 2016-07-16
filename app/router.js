@@ -6,11 +6,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-this.route('about',function(){
-	this.route('location',{path:'/about/:location_id'});
-	this.route('job');
-	this.route('page-not-found',{path:'/*wildcard'});
-});
+  this.route('about',function(){
+      this.route('location',{path:'/about/:location_id'});
+      this.route('job');
+      this.route('page-not-found',{path:'/*wildcard'});
+  });
+  this.route('students');
 });
 
 export default Router;
